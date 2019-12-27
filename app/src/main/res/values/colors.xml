@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="grayLight">#EEEEEE</color>
+    <color name="grayDark">#aaaaaa</color>
+    <color name="green">#00ff00</color>
+    <color name="rippleEffectColor">#000000</color>
+    <color name="btn_background">#FF9800</color>
+    <color name="orange">#FF9800</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

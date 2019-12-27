@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".ScheduleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/std0.5_dp"
+        android:background="@color/orange"
+        android:text="@string/schedule_info"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/busType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <TableLayout
+            android:id="@+id/busScheduleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/id_cad_details_dialog_key"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:padding="5dp"
+                    android:text="Route No"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/id_cad_details_dialog_start_time"
+                    android:layout_width="67dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:padding="5dp"
+                    android:text="Start Time"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/id_cad_details_dialog_end_time"
+                    android:layout_width="67dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:padding="5dp"
+                    android:text="End Time"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/id_cad_details_dialog_start_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:padding="5dp"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/id_cad_details_dialog_booking"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:padding="5dp"
+                    android:text="Book"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white">
+
+                </TextView>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:background="@drawable/background_button"
+        android:paddingLeft="@dimen/btn_padding"
+        android:paddingRight="@dimen/btn_padding"
+        android:text="@string/btn_add_schedule"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".BookActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/std0.5_dp"
+        android:background="@color/orange"
+        android:text="@string/booking_info"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="25dp"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:text="Available Seat Numbers"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/availableSeatNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/std0.5_dp"
+        android:background="@drawable/background_button"
+        android:padding="@dimen/std_dp"
+        android:text="@string/book"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+    <TableLayout
+        android:id="@+id/busBookingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/seatNo"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="Seat Number"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/passengerName"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="Passenger Name"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/std0.5_dp"
+        android:background="@drawable/background_button"
+        android:padding="@dimen/std_dp"
+        android:text="@string/clear"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/seatMap"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/std0.5_dp"
+        android:background="@drawable/background_button"
+        android:padding="@dimen/std_dp"
+        android:text="@string/seat_map"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</LinearLayout>

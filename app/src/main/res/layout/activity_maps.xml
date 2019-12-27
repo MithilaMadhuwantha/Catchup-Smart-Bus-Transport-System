@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/orange" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="237dp"
+            android:layout_height="43dp"
+            android:layout_gravity="left"
+            android:background="#ffffff"
+            android:hint="@string/search_hint"
+            android:label="@string/app_label">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_gravity="right"
+
+            android:background="@drawable/background_button"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/distance"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_distance" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="57dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="0 km"
+            android:textColor="@color/orange" />
+
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="57dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="0 mins"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:id="@+id/buttonFind_route"
+            android:layout_width="143dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="Find Route"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_marginTop="5dp"
+        tools:context="com.MMW.Catchup.MapsActivity" />
+
+   <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+     <TableLayout
+        android:id="@+id/busScheduleInfo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+         <TableRow
+             android:id="@+id/tableRow1"
+             android:layout_width="337dp"
+             android:layout_height="76dp">
+
+             <Button
+                 android:id="@+id/normal_bus_icon"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="@dimen/std0.5_dp"
+                 android:background="@drawable/normal"
+                 android:padding="5dp"
+                 android:text="Normal"
+                 android:textColor="@color/red">
+
+             </Button>
+
+             <Button
+                 android:id="@+id/semiluxury_bus_icon"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="@dimen/std0.5_dp"
+                 android:background="@drawable/semiluxury"
+                 android:padding="5dp"
+                 android:text="Semi Luxury"
+                 android:textColor="@color/white">
+
+             </Button>
+
+             <Button
+                 android:id="@+id/luxury_bus_icon"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="@dimen/std0.5_dp"
+                 android:background="@drawable/luxury"
+                 android:padding="5dp"
+                 android:text="Luxury"
+                 android:textColor="@color/white">
+
+             </Button>
+
+             <Button
+                 android:id="@+id/super_luxury_bus_icon"
+                 android:layout_width="80dp"
+                 android:layout_height="match_parent"
+                 android:background="@drawable/superluxury"
+                 android:padding="5dp"
+                 android:text="Super Luxury"
+                 android:textColor="@color/white">
+
+             </Button>
+
+         </TableRow>
+          </TableLayout>
+
+
+
+      </LinearLayout>

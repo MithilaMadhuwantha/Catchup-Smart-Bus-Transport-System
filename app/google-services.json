@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "410488162729",
+    "firebase_url": "https://mmwcatchup-b2690.firebaseio.com",
+    "project_id": "mmwcatchup-b2690",
+    "storage_bucket": "mmwcatchup-b2690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410488162729:android:5a6dd145b92f05a7",
+        "android_client_info": {
+          "package_name": "com.MMW.Catchup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410488162729-0h740seggt4o8m3fmk7ga4s2k2h4k0te.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MMW.Catchup",
+            "certificate_hash": "9079d76142fe963bce97fbc92fd2c5549a05a076"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaCwL9FOMj-BOWb6RSqqdq1z7OY0DCHmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410488162729-vvibv129lrm9elvitr1c10lkcseeausb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

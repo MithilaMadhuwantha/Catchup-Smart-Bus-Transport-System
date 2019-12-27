@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/img4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.MMW.Catchup.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="505dp"
+        android:layout_height="325dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="110dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/catchup_logo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="339dp"
+        android:layout_height="255dp"
+        android:layout_weight="1">
+
+        <!--<TextView
+           android:layout_width="308dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="13dp"
+           android:layout_marginRight="13dp"
+           android:text="SMART BUS TRANSPORT SYSTEM"
+           android:textAlignment="center"
+           android:textColor="#ffffff"
+           android:textSize="20dp"
+           android:textStyle="bold" />> -->
+
+    </RelativeLayout>
+</LinearLayout>
